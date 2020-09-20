@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    position: relative;
+     font-family: 'Courier New',
+     Courier,
+     monospace;
+}
+
+table {
+    margin: auto;
+
+}
+
+
+table,
+td,
+th {
+    border: 2px white solid;
+}
+td{
+    color:white;
+}
+.colspan {
+    padding: 0;
+    border: 0;
+}
+
+.input {
+    height: 40px;
+    width: 270px;
+    border-color:white;
+    font-size: 26px;
+
+}
+h1,h4{
+    text-align:center;
+    color:white;
+    margin:0;
+    padding:20px;
+}
+
+.bg_card{
+    background-color: black;
+    height: 100vh;
+}
+h2{
+    position: absolute;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    top: 450px;
+    left: 1100px;
+}
