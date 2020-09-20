@@ -33,6 +33,11 @@ var seven = document
   .addEventListener("click", function () {
     document.querySelector(".input").value += 1;
   });
+  var seven = document
+      .querySelector(".zero")
+      .addEventListener("click", function () {
+      document.querySelector(".input").value += 0;
+      });
 var seven = document
   .querySelector(".two")
   .addEventListener("click", function () {
