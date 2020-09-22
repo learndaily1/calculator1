@@ -11,13 +11,15 @@
 
 
 <body>
- 
+
   <div class="bg_card">
- <h1>Calculator made with JavaScript</h1>
+    <h1>Calculator made with JavaScript</h1>
+
     <div class="tablediv">
       <table cellpadding=10px cellspacing=10px class="table">
         <tr>
-          <td class="colspan" colspan="5"> <input type="text" class="input" onkeypress="myFunction(event)" autofocus="autofocus" ></td>
+          <td class="colspan" colspan="5"> <input type="text" class="input" onkeypress="myFunction(event)"
+              autofocus="autofocus"></td>
 
         </tr>
         <tr>
@@ -42,24 +44,148 @@
           <td class="divide">/</td>
         </tr>
         <tr>
-          <td class="zero" colspan="2">0</td>
+          <td colspan="2" class="zero">0</td>
           <td class="dot">.</td>
           <td class="into">*</td>
           <td class="equal">=</td>
 
         </tr>
       </table>
-      
-  <h4>Click " / " to reload</h4>
-  <h2>---By Learn daily</h2>
+
+      <h4>Click " ? " to reload</h4>
+      <h2>---By Learn daily</h2>
     </div>
   </div>
-     
-  
-  
 
 
-  <script src="js1.js"></script>
+
+
+
+  <script>
+    var seven = document
+      .querySelector(".seven")
+      .addEventListener("click", function () {
+        document.querySelector(".input").value += 7;
+      });
+    var seven = document
+      .querySelector(".eight")
+      .addEventListener("click", function () {
+        document.querySelector(".input").value += 8;
+      });
+    var seven = document
+      .querySelector(".nine")
+      .addEventListener("click", function () {
+        document.querySelector(".input").value += 9;
+      });
+    var seven = document
+      .querySelector(".four")
+      .addEventListener("click", function () {
+        document.querySelector(".input").value += 4;
+      });
+    var seven = document
+      .querySelector(".zero")
+      .addEventListener("click", function () {
+        document.querySelector(".input").value += 0;
+      });
+    var seven = document
+      .querySelector(".five")
+      .addEventListener("click", function () {
+        document.querySelector(".input").value += 5;
+      });
+    var seven = document
+      .querySelector(".six")
+      .addEventListener("click", function () {
+        document.querySelector(".input").value += 6;
+      });
+    var seven = document
+      .querySelector(".one")
+      .addEventListener("click", function () {
+        document.querySelector(".input").value += 1;
+      });
+    var seven = document
+      .querySelector(".two")
+      .addEventListener("click", function () {
+        document.querySelector(".input").value += 2;
+      });
+    var seven = document
+      .querySelector(".three")
+      .addEventListener("click", function () {
+        document.querySelector(".input").value += 3;
+      });
+
+    var seven = document
+      .querySelector(".equal")
+      .addEventListener("click", function () {
+        var x = document.querySelector(".input").value;
+        document.querySelector(".input").value = eval(x);
+      });
+    var seven = document
+      .querySelector(".plus")
+      .addEventListener("click", function () {
+        document.querySelector(".input").value += "+";
+      });
+    var seven = document
+      .querySelector(".minus")
+      .addEventListener("click", function () {
+        document.querySelector(".input").value += "-";
+      });
+
+    var seven = document
+      .querySelector(".into")
+      .addEventListener("click", function () {
+        document.querySelector(".input").value += "*";
+      });
+    var seven = document
+      .querySelector(".divide")
+      .addEventListener("click", function () {
+        document.querySelector(".input").value += "/";
+      });
+
+    var seven = document
+      .querySelector(".clear")
+      .addEventListener("click", function () {
+        document.querySelector(".input").value = "";
+      });
+
+    var seven = document
+      .querySelector(".dot")
+      .addEventListener("click", function () {
+        document.querySelector(".input").value += ".";
+      });
+    var seven = document
+      .querySelector(".back")
+      .addEventListener("click", function () {
+        var back = document.querySelector(".input").value.length;
+        var backB = document.querySelector(".input").value;
+        if (back > 0) {
+          var backA = backB.slice(0, back - 1);
+          document.querySelector(".back");
+          document.querySelector(".input").value = backA;
+        } else {
+          alert("please enter value");
+        }
+      });
+    var x = document.querySelector(".input").value;
+
+    function myFunction(event) {
+      var y = event.which;
+
+
+      if (y == 13) {
+        var x = document.querySelector(".input").value;
+        document.querySelector(".input").value = eval(x);
+      }
+      if (y == 63) {
+        location.reload();
+
+
+      }
+    }
+
+    document.querySelector(".button").addEventListener("click", function () {
+      location.reload();
+    });
+  </script>
 </body>
 
 </html>
